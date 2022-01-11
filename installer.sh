@@ -7,16 +7,6 @@ fi
 echo "In order to use the Q3A Demo to run your server you must agree to id Software's EULA\n\n"
 cat ./idSoftwareEULA
 echo ""
-while : 
-do
-	read -p "Do you agree to the EULA? (y/n): "  agree
-
-	case $agree in
-  	  y*|Y*) break ;;
-  	  n*|N*) exit 1 ;;
-	esac
-	
-done
 
 DIR="$(pwd)"
 chmod +x ./scripts/*.sh
